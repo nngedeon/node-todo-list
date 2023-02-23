@@ -1,0 +1,9 @@
+const mongoose = require('mongoose')
+
+const dataSchema = mongoose.Schema(
+    {nom:{type:String,required:true},mail:{type:String,required:true},age:{type:Number,required:true},sex:{type:String,required:true}
+})
+
+const datas = mongoose.model('datas',dataSchema)
+module.exports = datas
+
